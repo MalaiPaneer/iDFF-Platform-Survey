@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fresh Foods Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+  <div class="background-blur"></div>
+
+  <div class="glass-container" id="formContainer">
+    <h1 class="title">iD Fresh Foods Survey</h1>
+
+    <form id="surveyForm">
+      <div class="question">
+        <label for="name">What's your name?</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="question">
+        <p>
+  Please rank the following social media platforms based on their importance for <strong>iD Fresh Foods'</strong> campaign.<br>
+  <strong>1</strong> = Most important (primary platform), <strong>5</strong> = Least important.
+</p>
+
+        <div class="rating-group">
+          <label>Instagram:</label>
+          <input type="number" name="instagram" min="1" max="5" required />
+        </div>
+        <div class="rating-group">
+          <label>YouTube:</label>
+          <input type="number" name="youtube" min="1" max="5" required />
+        </div>
+        <div class="rating-group">
+          <label>Facebook:</label>
+          <input type="number" name="facebook" min="1" max="5" required />
+        </div>
+        <div class="rating-group">
+          <label>Twitter (X):</label>
+          <input type="number" name="twitter" min="1" max="5" required />
+        </div>
+        <div class="rating-group">
+          <label>LinkedIn:</label>
+          <input type="number" name="linkedin" min="1" max="5" required />
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="thank-you hidden" id="thankYou">
+    <h2>Thanks for your response!</h2>
+    <p>We appreciate your input. Stay fresh! 🌴🥥</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
